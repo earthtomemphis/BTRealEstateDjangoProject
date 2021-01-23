@@ -151,3 +151,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER='earthtomemphis@gmail.com'
 EMAIL_HOST_PASSWORD='4Q5-uKE-nBM-ASf'
 EMAIL_USE_TLS=True
+
+try:
+    from .local_settings import *
+except:
+    pass
