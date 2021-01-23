@@ -154,5 +154,5 @@ EMAIL_USE_TLS=True
 
 try:
     from .local_settings import *
-except:
+except ImportError:
     pass
